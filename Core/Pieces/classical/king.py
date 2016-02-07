@@ -14,6 +14,9 @@ class King(AbsKing):
     
     def moves(self,x,y):
         return self.kingMoves(x,y)
+
+    def validate(self, x, y, plateau, moves):
+        return self.kingValidate(x, y, plateau, moves)
     
     def smallCastle(self):
         if self.color and self.army == "Classic":

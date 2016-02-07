@@ -9,3 +9,6 @@ ub = alphabet.index("G")
 class Rook(AbsRook):
     def moves(self,x,y):
         return self.rookMoves(x,y)
+
+    def validate(self, x, y, plateau, moves):
+        return self.rookValidate(x, y, plateau, moves)

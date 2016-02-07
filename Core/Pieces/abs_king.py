@@ -32,4 +32,7 @@ class AbsKing:
             listK+=[(alphabet[alphabet.index(x)-1],y-1)]    #down left
             
         return listK
+
+    def kingValidate(self, x, y, plateau, moves):
+        return moves
     

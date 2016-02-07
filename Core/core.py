@@ -141,8 +141,9 @@ class Core(Thread):
         
     def getPossibleMoves(self, x1, y1):
         listPossibleMovesL = plateau[x1][y1].moves(self.getLetter(x1),8-y1)
+        listPossibleMovesL2 = plateau[x1][y1].validate(self.getLetter(x1),8-y1, plateau, listPossibleMovesL)
         listPossibleMoves = []
-        for (x,y) in listPossibleMovesL:
+        for (x,y) in listPossibleMovesL2:
             listPossibleMoves.append([self.getIndex(x),8-y])
         return listPossibleMoves
         

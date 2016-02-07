@@ -32,3 +32,6 @@ class AbsKnight:
             listM+=[(alphabet[alphabet.index(x)-1],y+2)]
 
         return listM
+
+    def knightValidate(self, x, y, plateau, moves):
+        return moves

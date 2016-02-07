@@ -9,3 +9,6 @@ ub = alphabet.index("G")
 class Bishop(AbsBishop):
     def moves(self,x,y):
         return self.bishopMoves(x,y)
+
+    def validate(self, x, y, plateau, moves):
+        return self.bishopValidate(x, y, plateau, moves)

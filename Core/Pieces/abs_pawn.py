@@ -43,4 +43,7 @@ class AbsPawn:
         
         """Return correct moves"""
         return listP
+
+    def pawnValidate(self, x, y, plateau, moves):
+        return moves
         

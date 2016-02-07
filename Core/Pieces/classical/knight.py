@@ -8,3 +8,6 @@ ub = alphabet.index("G")
 class Knight(AbsKnight):
     def moves(self,x,y):
         return self.knightMoves(x,y)
+
+    def validate(self, x, y, plateau, moves):
+        return self.knightValidate(x, y, plateau, moves)

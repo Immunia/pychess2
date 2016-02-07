@@ -29,3 +29,7 @@ class AbsRook:
 
         return listH+listV
 
+    def rookValidate(self, x, y, plateau, moves):
+        moves2 = moves
+
+        return moves2

@@ -10,3 +10,6 @@ class Pawn(AbsPawn):
     def moves(self,x,y):
         return self.pawnMoves(x,y)
 
+    def validate(self, x, y, plateau, moves):
+        return self.pawnValidate(x, y, plateau, moves)
+

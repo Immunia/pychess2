@@ -17,3 +17,5 @@ class Queen(AbsRook,AbsBishop):
     def moves(self,x,y):
         return self.rookMoves(x,y) + self.bishopMoves(x,y)
 
+    def validate(self, x, y, plateau, moves):
+        return self.rookValidate(x, y, plateau, moves) + self.bishopValidate(x, y, plateau, moves)

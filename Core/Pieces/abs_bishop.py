@@ -48,3 +48,6 @@ class AbsBishop:
 
         return listD
 
+    def bishopValidate(self, x, y, plateau, moves):
+        return moves
+
